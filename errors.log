@@ -1,0 +1,1966 @@
+2023-10-18 22:30:45,434 - ERROR - Cause exception while process update id=136289139 by bot id=6610711854
+TypeError: db_check_user() missing 1 required positional argument: 'user_id'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 23, in start_command
+    db_result = db_check_user()
+TypeError: db_check_user() missing 1 required positional argument: 'user_id'
+2023-10-18 22:33:14,645 - ERROR - Cause exception while process update id=136289141 by bot id=6610711854
+OperationalError: no such table: profile
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 23, in start_command
+    db_result = await db_check_user(message.from_user.id)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 36, in db_check_user
+    cur.execute("SELECT * FROM profile WHERE user_id = ?", (user_id,))
+sqlite3.OperationalError: no such table: profile
+2023-10-18 23:22:27,909 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 00:11:57,574 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 00:27:55,650 - ERROR - Cause exception while process update id=136289149 by bot id=6610711854
+TypeError: get_phone() missing 1 required positional argument: 'state'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 27, in start_command
+    await get_phone(message)
+TypeError: get_phone() missing 1 required positional argument: 'state'
+2023-10-19 00:34:56,037 - ERROR - Cause exception while process update id=136289151 by bot id=6610711854
+AttributeError: 'State' object has no attribute 'storage'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 29, in start_command
+    await get_phone(message)
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 8, in get_phone
+    await state.set_state(GetDataState.amount_input)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/context.py", line 12, in set_state
+    await self.storage.set_state(key=self.key, state=state)
+AttributeError: 'State' object has no attribute 'storage'
+2023-10-19 00:44:22,572 - ERROR - Cause exception while process update id=136289152 by bot id=6610711854
+AttributeError: 'State' object has no attribute 'storage'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 29, in start_command
+    await get_phone(message)
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 8, in get_phone
+    await state.set_state(GetDataState.amount_input)  # Pass the state type as an argument
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/context.py", line 12, in set_state
+    await self.storage.set_state(key=self.key, state=state)
+AttributeError: 'State' object has no attribute 'storage'
+2023-10-19 00:49:13,009 - ERROR - Cause exception while process update id=136289154 by bot id=6610711854
+TypeError: __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 31, in start_command
+    await get_phone(message, state)
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 11, in get_phone
+    request_contact_button = KeyboardButton("Отправить контакт", request_contact=True)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2023-10-19 00:50:36,477 - ERROR - Cause exception while process update id=136289155 by bot id=6610711854
+ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True,...ne_time_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 31, in start_command
+    await get_phone(message, state)
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 17, in get_phone
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True,...ne_time_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+2023-10-19 01:32:13,886 - ERROR - Cause exception while process update id=136289170 by bot id=6610711854
+KeyError: 'chosen_amount'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 29, in process_amount_input
+    print(user_data['chosen_amount'])
+KeyError: 'chosen_amount'
+2023-10-19 02:52:21,059 - ERROR - Cause exception while process update id=136289227 by bot id=6610711854
+ProgrammingError: Incorrect number of bindings supplied. The current statement uses 4, and there are 5 supplied.
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 55, in process_amount_input
+    await add_user_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 64, in add_user_to_db
+    cur.execute("INSERT INTO profile (user_id, phone, name, surname) VALUES (?, ?, ?, ?)", (user_id, phone, name, surname, birthday))
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 4, and there are 5 supplied.
+2023-10-19 02:53:51,391 - ERROR - Cause exception while process update id=136289232 by bot id=6610711854
+OperationalError: 5 values for 4 columns
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 55, in process_amount_input
+    await add_user_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 64, in add_user_to_db
+    cur.execute("INSERT INTO profile (user_id, phone, name, surname) VALUES (?, ?, ?, ?, ?)", (user_id, phone, name, surname, birthday))
+sqlite3.OperationalError: 5 values for 4 columns
+2023-10-19 03:42:13,606 - ERROR - Cause exception while process update id=136289280 by bot id=6610711854
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 22, in get_name
+    phone_number = message.contact.phone_number
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+2023-10-19 03:46:10,352 - ERROR - Cause exception while process update id=136289301 by bot id=6610711854
+OperationalError: table profile has no column named sex
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 68, in process_amount_input
+    await add_user_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 63, in add_user_to_db
+    cur.execute("INSERT INTO profile (user_id, phone, name, surname, sex, birthday) VALUES (?, ?, ?, ?, ?, ?)", (user_id, phone, name, surname, sex, birthday))
+sqlite3.OperationalError: table profile has no column named sex
+2023-10-19 03:47:20,124 - ERROR - Cause exception while process update id=136289307 by bot id=6610711854
+OperationalError: table profile has no column named sex
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 68, in process_amount_input
+    await add_user_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 64, in add_user_to_db
+    cur.execute("INSERT INTO profile (user_id, phone, name, surname, sex, birthday) VALUES (?, ?, ?, ?, ?, ?)", (user_id, phone, name, surname, sex, birthday))
+sqlite3.OperationalError: table profile has no column named sex
+2023-10-19 03:51:48,674 - ERROR - Cause exception while process update id=136289317 by bot id=6610711854
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/get_data/data_request.py", line 22, in get_name
+    if message.contact.phone_number:
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+2023-10-19 04:18:16,727 - ERROR - Cause exception while process update id=136289340 by bot id=6610711854
+NameError: name 'types' is not defined
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/start.py", line 33, in start_command
+    key = await main_keyboard()
+  File "/Users/jim/Desktop/IQOS/keyboards/keyboards_collection.py", line 7, in main_keyboard
+    types.KeyboardButton(text="С пюрешкой"),
+NameError: name 'types' is not defined
+2023-10-19 05:34:27,378 - ERROR - Cause exception while process update id=136289395 by bot id=6610711854
+ValidationError: 2 validation errors for SendPhoto
+photo.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/is_instance_of
+photo.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/petpo_club.py", line 17, in petpo_club
+    await message.answer_photo(photo)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1851, in answer_photo
+    return SendPhoto(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendPhoto
+photo.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/is_instance_of
+photo.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type
+2023-10-19 05:35:40,538 - ERROR - Cause exception while process update id=136289397 by bot id=6610711854
+ValidationError: 2 validation errors for SendPhoto
+photo.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/is_instance_of
+photo.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/petpo_club.py", line 17, in petpo_club
+    await message.answer_photo(photo)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1851, in answer_photo
+    return SendPhoto(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendPhoto
+photo.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/is_instance_of
+photo.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name='media/picture_1.jpg'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type
+2023-10-19 05:37:10,405 - ERROR - Cause exception while process update id=136289398 by bot id=6610711854
+TypeError: Can't instantiate abstract class InputFile with abstract method read
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/petpo_club.py", line 17, in petpo_club
+    photo = InputFile('media/picture_1.jpg')
+TypeError: Can't instantiate abstract class InputFile with abstract method read
+2023-10-19 05:38:39,250 - ERROR - Cause exception while process update id=136289400 by bot id=6610711854
+TypeError: Can't instantiate abstract class InputFile with abstract method read
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/petpo_club.py", line 19, in petpo_club
+    input_photo = InputFile(photo)
+TypeError: Can't instantiate abstract class InputFile with abstract method read
+2023-10-19 05:39:37,135 - ERROR - Cause exception while process update id=136289402 by bot id=6610711854
+TypeError: Can't instantiate abstract class InputFile with abstract method read
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/petpo_club.py", line 19, in petpo_club
+    input_photo = InputFile(photo)
+TypeError: Can't instantiate abstract class InputFile with abstract method read
+2023-10-19 05:47:44,560 - ERROR - Cause exception while process update id=136289406 by bot id=6610711854
+ValidationError: 4 validation errors for SendPhoto
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/petpo_club.py", line 18, in petpo_club
+    result = await message.answer_photo(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1851, in answer_photo
+    return SendPhoto(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for SendPhoto
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object petpo_c...keyboard at 0x110798bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+2023-10-19 08:35:15,431 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 09:10:03,993 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 09:44:37,332 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 10:20:16,204 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 10:37:17,468 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 60] Operation timed out
+2023-10-19 12:36:01,553 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 15:29:28,880 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 17:26:49,839 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 20:27:13,205 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-19 22:15:20,266 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-20 00:44:21,027 - ERROR - Cause exception while process update id=136290057 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 51, in get_name_data
+    print(user_data['birthday'])
+KeyError: 'birthday'
+2023-10-20 00:45:15,091 - ERROR - Cause exception while process update id=136290060 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 51, in get_name_data
+    if user_data['birthday']:
+KeyError: 'birthday'
+2023-10-20 01:05:10,420 - ERROR - Cause exception while process update id=136290086 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 32, in delete_birthday
+    del user_data['birthday']
+KeyError: 'birthday'
+2023-10-20 01:05:24,687 - ERROR - Cause exception while process update id=136290087 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 32, in delete_birthday
+    del user_data['birthday']
+KeyError: 'birthday'
+2023-10-20 01:05:26,008 - ERROR - Cause exception while process update id=136290088 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 32, in delete_birthday
+    del user_data['birthday']
+KeyError: 'birthday'
+2023-10-20 01:05:30,817 - ERROR - Cause exception while process update id=136290091 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 32, in delete_birthday
+    del user_data['birthday']
+KeyError: 'birthday'
+2023-10-20 01:06:55,038 - ERROR - Cause exception while process update id=136290095 by bot id=6610711854
+NameError: name 'key' is not defined
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 36, in delete_birthday
+    'что вам уже есть 18 лет 😉Введите ниже дату в формате ДД.ММ.ГГГГ', reply_markup=key)
+NameError: name 'key' is not defined
+2023-10-20 01:25:05,030 - ERROR - Cause exception while process update id=136290157 by bot id=6610711854
+KeyError: 'birthday'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 64, in get_name_data
+    if user_data['birthday']:
+KeyError: 'birthday'
+2023-10-20 04:19:25,185 - ERROR - Cause exception while process update id=136290350 by bot id=6610711854
+TypeError: GetOrderState() takes no arguments
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 112, in trigger
+    result, data = await handler.check(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 93, in check
+    check = await event_filter.call(*args, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 47, in call
+    return await loop.run_in_executor(None, wrapped)
+  File "/usr/local/Cellar/python@3.9/3.9.16/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: GetOrderState() takes no arguments
+2023-10-20 04:43:39,188 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-20 05:38:34,807 - ERROR - Cause exception while process update id=136290441 by bot id=6610711854
+ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True,...ne_time_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 170, in get_item
+    key = await location_share_keyboard()
+  File "/Users/jim/Desktop/IQOS/keyboards/keyboards_collection.py", line 186, in location_share_keyboard
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True,...ne_time_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+2023-10-20 05:39:48,523 - ERROR - Cause exception while process update id=136290448 by bot id=6610711854
+ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 170, in get_item
+    key = await location_share_keyboard()
+  File "/Users/jim/Desktop/IQOS/keyboards/keyboards_collection.py", line 186, in location_share_keyboard
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+2023-10-20 05:42:16,985 - ERROR - Cause exception while process update id=136290454 by bot id=6610711854
+ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 170, in get_item
+    key = await location_share_keyboard()
+  File "/Users/jim/Desktop/IQOS/keyboards/keyboards_collection.py", line 187, in location_share_keyboard
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReplyKeyboardMarkup
+keyboard
+  Field required [type=missing, input_value={'resize_keyboard': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.3/v/missing
+2023-10-20 06:19:11,658 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-20 06:56:33,791 - ERROR - Cause exception while process update id=136290572 by bot id=6610711854
+InterfaceError: Error binding parameter 4 - probably unsupported type.
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 211, in confirm_order
+    await add_order_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 88, in add_order_to_db
+    cur.execute("INSERT INTO orders (user_id, number, name, item, location) VALUES (?, ?, ?, ?, ?)", (user_id, number, name, item, location))
+sqlite3.InterfaceError: Error binding parameter 4 - probably unsupported type.
+2023-10-20 06:57:34,329 - ERROR - Cause exception while process update id=136290579 by bot id=6610711854
+IntegrityError: UNIQUE constraint failed: orders.user_id
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 211, in confirm_order
+    await add_order_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 88, in add_order_to_db
+    cur.execute("INSERT INTO orders (user_id, number, name, item, location) VALUES (?, ?, ?, ?, ?)", (user_id, number, name, item, location))
+sqlite3.IntegrityError: UNIQUE constraint failed: orders.user_id
+2023-10-20 07:00:14,932 - ERROR - Cause exception while process update id=136290586 by bot id=6610711854
+IntegrityError: UNIQUE constraint failed: orders.user_id
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/order_request.py", line 211, in confirm_order
+    await add_order_to_db(message, user_data)
+  File "/Users/jim/Desktop/IQOS/database/db_actions.py", line 88, in add_order_to_db
+    cur.execute("INSERT INTO orders (user_id, number, name, item, location) VALUES (?, ?, ?, ?, ?)", (user_id, number, name, item, location))
+sqlite3.IntegrityError: UNIQUE constraint failed: orders.user_id
+2023-10-20 07:11:33,367 - ERROR - Cause exception while process update id=136290611 by bot id=6610711854
+TypeError: object list can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/show_orders.py", line 16, in address
+    orders = await find_orders_by_user_id(message)
+TypeError: object list can't be used in 'await' expression
+2023-10-20 08:30:21,652 - ERROR - Cause exception while process update id=136290699 by bot id=6610711854
+ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/social.py", line 16, in social
+    await message.answer("Хотите быть в курсе всех новостей об PETPO CLUB?\nПодписывайтесь на наши официальные каналы в социальных сетях!", reply_markup=key)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1725, in answer
+    return SendMessage(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object social_...keyboard at 0x107eca5c0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+2023-10-20 08:47:54,866 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-10-20 09:08:49,659 - ERROR - Cause exception while process update id=136290739 by bot id=6610711854
+ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/show_items.py", line 29, in add_confirmed
+    await message.answer('Выберите модель устройства, которое вы бы хотели добавить к аккаунту', reply_markup=key)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1725, in answer
+    return SendMessage(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object add_ite...keyboard at 0x104c13640>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+2023-10-20 09:44:50,543 - ERROR - Cause exception while process update id=136290859 by bot id=6610711854
+ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/stores.py", line 16, in stores
+    await message.answer('ТЕКСТ №2', reply_markup=key)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1725, in answer
+    return SendMessage(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object locatio...keyboard at 0x108976840>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+2023-10-20 09:45:11,981 - ERROR - Cause exception while process update id=136290860 by bot id=6610711854
+ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/stores.py", line 16, in stores
+    await message.answer('ТЕКСТ №2', reply_markup=key)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1725, in answer
+    return SendMessage(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<aiogram.utils.keyboard.R...r object at 0x111d86730>, input_type=ReplyKeyboardBuilder]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+2023-10-20 10:40:02,890 - ERROR - Cause exception while process update id=136290926 by bot id=6610711854
+ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/buy.py", line 26, in for_items
+    await message.answer('Выберите, пожалуйста, что вы хотите купить', reply_markup=key)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/types/message.py", line 1725, in answer
+    return SendMessage(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for SendMessage
+reply_markup.InlineKeyboardMarkup
+  Input should be a valid dictionary or instance of InlineKeyboardMarkup [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardMarkup
+  Input should be a valid dictionary or instance of ReplyKeyboardMarkup [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ReplyKeyboardRemove
+  Input should be a valid dictionary or instance of ReplyKeyboardRemove [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+reply_markup.ForceReply
+  Input should be a valid dictionary or instance of ForceReply [type=model_type, input_value=<coroutine object for_ite...keyboard at 0x107830bc0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.3/v/model_type
+2023-10-20 10:55:40,811 - ERROR - Cause exception while process update id=136290948 by bot id=6610711854
+AttributeError: 'coroutine' object has no attribute 'as_markup'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/buy.py", line 72, in request_location
+    await message.answer('Отлично!\nВведите ваш точный адрес в формате «город, улица, дом» или поделитесь геопозицией, чтобы я смог найти ближайшие к вам магазины.', reply_markup=key.as_markup(resize_keyboard=True))
+AttributeError: 'coroutine' object has no attribute 'as_markup'
+2023-10-20 11:55:34,672 - ERROR - Cause exception while process update id=136291046 by bot id=6610711854
+AttributeError: 'InlineKeyboardMarkup' object has no attribute 'as_markup'
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 726, in __getattr__
+    return pydantic_extra[item]
+KeyError: 'as_markup'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/fsm/middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/Users/jim/Desktop/IQOS/handlers/guide.py", line 65, in send_link
+    await message.answer('Переходите в наш Телеграм канал', reply_markup=key.as_markup(one_time=True))
+  File "/Users/jim/Desktop/IQOS/venv/lib/python3.9/site-packages/pydantic/main.py", line 728, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'InlineKeyboardMarkup' object has no attribute 'as_markup'
